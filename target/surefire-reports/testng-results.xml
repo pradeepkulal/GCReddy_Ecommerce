@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-03T10:19:11 IST" name="Surefire suite" finished-at="2022-10-03T10:24:22 IST" duration-ms="311301">
+    <groups>
+    </groups>
+    <test started-at="2022-10-03T10:19:11 IST" name="Surefire test" finished-at="2022-10-03T10:24:22 IST" duration-ms="311301">
+      <class name="com.GCReddy_v1.TestCases.TC1001_Administrator_loginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.GCReddy_v1.TestCases.TC1001_Administrator_loginTest@69b794e2]" started-at="2022-10-03T10:19:11 IST" name="setUp" finished-at="2022-10-03T10:19:13 IST" duration-ms="1893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithValidCredentials()[pri:0, instance:com.GCReddy_v1.TestCases.TC1001_Administrator_loginTest@69b794e2]" started-at="2022-10-03T10:19:13 IST" name="loginWithValidCredentials" finished-at="2022-10-03T10:19:17 IST" duration-ms="3728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method signature="loginWithInvalidCredentials()[pri:1, instance:com.GCReddy_v1.TestCases.TC1001_Administrator_loginTest@69b794e2]" started-at="2022-10-03T10:19:17 IST" name="loginWithInvalidCredentials" finished-at="2022-10-03T10:19:17 IST" duration-ms="540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCredentials -->
+        <test-method signature="loginWithValidUsernameAndInvalidPassword()[pri:2, instance:com.GCReddy_v1.TestCases.TC1001_Administrator_loginTest@69b794e2]" started-at="2022-10-03T10:19:17 IST" name="loginWithValidUsernameAndInvalidPassword" finished-at="2022-10-03T10:19:18 IST" duration-ms="458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidUsernameAndInvalidPassword -->
+        <test-method signature="loginWithInvalidUsernameAndValidPassword()[pri:3, instance:com.GCReddy_v1.TestCases.TC1001_Administrator_loginTest@69b794e2]" started-at="2022-10-03T10:19:18 IST" name="loginWithInvalidUsernameAndValidPassword" finished-at="2022-10-03T10:19:18 IST" duration-ms="452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidUsernameAndValidPassword -->
+        <test-method signature="maxlogin()[pri:4, instance:com.GCReddy_v1.TestCases.TC1001_Administrator_loginTest@69b794e2]" started-at="2022-10-03T10:19:18 IST" name="maxlogin" finished-at="2022-10-03T10:19:19 IST" duration-ms="464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maxlogin -->
+        <test-method signature="loginAfterMaxLogin()[pri:5, instance:com.GCReddy_v1.TestCases.TC1001_Administrator_loginTest@69b794e2]" started-at="2022-10-03T10:19:19 IST" name="loginAfterMaxLogin" finished-at="2022-10-03T10:24:20 IST" duration-ms="301675" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [http://gcreddy.com/project/admin/index.php123] but found [http://gcreddy.com/project/admin/index.php]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [http://gcreddy.com/project/admin/index.php123] but found [http://gcreddy.com/project/admin/index.php]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.GCReddy_v1.TestCases.TC1001_Administrator_loginTest.loginAfterMaxLogin(TC1001_Administrator_loginTest.java:133)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAfterMaxLogin -->
+        <test-method signature="redirectingToCustomerTest()[pri:6, instance:com.GCReddy_v1.TestCases.TC1001_Administrator_loginTest@69b794e2]" started-at="2022-10-03T10:24:20 IST" name="redirectingToCustomerTest" finished-at="2022-10-03T10:24:22 IST" duration-ms="1699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirectingToCustomerTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.GCReddy_v1.TestCases.TC1001_Administrator_loginTest@69b794e2]" started-at="2022-10-03T10:24:22 IST" name="tearDown" finished-at="2022-10-03T10:24:22 IST" duration-ms="361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.GCReddy_v1.TestCases.TC1001_Administrator_loginTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
